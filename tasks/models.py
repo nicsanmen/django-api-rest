@@ -6,7 +6,7 @@ class Task(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(max_length=500, blank=True)
     completed = models.BooleanField(default=False)
-    labels = models.ManyToManyField('Label', related_name='tasks')
+    labels = models.ManyToManyField('Label', blank=True,  related_name='tasks')
 
     def __str__(self):
         return self.title

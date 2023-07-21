@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { TasksPage } from "./pages/TasksPage";
 import { TaskFormPage } from "./pages/TaskFormPage";
+import { LabelPage } from "./pages/LabelPage";
+import { LabelFormPage } from "./pages/LabelFormPage";
 import { Toaster } from "react-hot-toast";
 import { Navigation } from "./components/Navigation";
 
@@ -14,6 +16,8 @@ function App() {
           <Route path="/tasks" element={<TasksPage />} />
           <Route path="/tasks/new" element={<TaskFormPage />} />
           <Route path="/task/:id" element={<TaskFormPage />} />
+          <Route path="labels" element={<LabelPage />} />
+          <Route path="labels/new" element={<LabelFormPage />} />
         </Routes>
         <Toaster />
       </div>
