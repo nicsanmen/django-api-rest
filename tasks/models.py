@@ -21,6 +21,7 @@ class Label(models.Model):
         ('purple', 'Purple'),
         ('pink', 'Pink'),
         ('brown', 'Brown'),
+    ]
 
     name = models.CharField(max_length=200)
     color = models.CharField(max_length=200, choices=COLOR_CHOICES)
