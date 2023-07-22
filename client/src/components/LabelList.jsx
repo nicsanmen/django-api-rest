@@ -3,20 +3,20 @@ import { getAllLabels } from "../api/task.api";
 import { LabelCard } from "./LabelCard";
 
 export function LabelList() {
-  const [tasks, setTasks] = useState([]);
+  const [labels, setLabels] = useState([]);
 
   useEffect(() => {
     async function loadLabels() {
       const res = await getAllLabels();
-      setTasks(res.data);
+      setLabels(res.data);
     }
     loadLabels();
   }, []);
 
   return (
     <div className="grid grid-cols-3 gap-3">
-      {tasks.map((task) => (
-        <LabelCard key={task.id} task={task} />
+      {labels.map((label) => (
+        <LabelCard key={label.id} label={label} />
       ))}
     </div>
   );

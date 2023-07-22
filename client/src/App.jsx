@@ -18,6 +18,7 @@ function App() {
           <Route path="/task/:id" element={<TaskFormPage />} />
           <Route path="labels" element={<LabelPage />} />
           <Route path="labels/new" element={<LabelFormPage />} />
+          <Route path="labels/:id" element={<LabelFormPage />} />
         </Routes>
         <Toaster />
       </div>

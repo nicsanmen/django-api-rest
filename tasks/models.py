@@ -16,7 +16,6 @@ class Label(models.Model):
         ('red', 'Red'),
         ('blue', 'Blue'),
         ('green', 'Green'),
-        ('yellow', 'Yellow'),
         ('orange', 'Orange'),
         ('purple', 'Purple'),
         ('pink', 'Pink'),
