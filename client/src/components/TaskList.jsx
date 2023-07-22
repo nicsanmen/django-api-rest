@@ -8,6 +8,7 @@ export function TaskList() {
   useEffect(() => {
     async function loadTasks() {
       const res = await getAllTasks();
+      // console.log(res.data);
       setTasks(res.data);
     }
     loadTasks();

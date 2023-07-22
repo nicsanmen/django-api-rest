@@ -30,6 +30,7 @@ export function TaskFormPage() {
     async function loadTask() {
       if (params.id) {
         const { data } = await getTask(params.id);
+        console.log(data);
         setValue("title", data.title);
         setValue("description", data.description);
       }
